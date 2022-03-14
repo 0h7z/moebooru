@@ -2,9 +2,9 @@
 # Only works with postgresql adapter.
 login: &login
   adapter: postgresql
-  username: postgres
+  username: moebooru
   password: imouto
-  host: 127.0.0.1
+  host: localhost
 
 development:
   database: moebooru_dev

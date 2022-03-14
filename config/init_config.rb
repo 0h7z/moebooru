@@ -3,7 +3,7 @@ CONFIG = {}
 CONFIG["version"] = "6.0.0"
 
 # The default name to use for anyone who isn't logged in.
-CONFIG["default_guest_name"] = "Anonymous"
+CONFIG["default_guest_name"] = "nobody" # "Anonymous"
 
 # This is a salt used to make dictionary attacks on account passwords harder.
 CONFIG["password_salt"] = "choujin-steiner"
@@ -33,7 +33,7 @@ CONFIG["pool_zips"] = false
 # and should usually be listed in CONFIG["image_servers"] unless this is a backup-
 # only host.
 CONFIG["mirrors"] = [
-  # { :user => "danbooru", :host => "example.com", :data_dir => "/home/danbooru/public/data" },
+  # { :user => "moebooru", :host => "example.com", :data_dir => "/home/moebooru/public/data" },
 ]
 
 # Enables image samples for large images. NOTE: if you enable this, you must manually create a public/data/sample directory.
@@ -88,7 +88,7 @@ CONFIG["jpeg_quality"] = 94
 #	"^/sample/([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{28})(/.*)?(\.[a-z]*)" => "/data/sample/$1/$2/$1$2$3$5"
 # )
 #
-CONFIG["use_pretty_image_urls"] = false
+CONFIG["use_pretty_image_urls"] = true # false
 
 # If use_pretty_image_urls is true, sets a prefix to prepend to all filenames.  This
 # is only present in the generated URL, and is useful to allow your downloaded files
@@ -105,13 +105,13 @@ CONFIG["amazon_s3_access_key_id"] = ""
 CONFIG["amazon_s3_secret_access_key"] = ""
 CONFIG["amazon_s3_bucket_name"] = ""
 
-# Enabling this will cause Danbooru to cache things longer:
+# Enabling this will cause Moebooru to cache things longer:
 # - On post/index, any page after the first 10 will be cached for 3-7 days.
 # - post/show is cached
 CONFIG["enable_aggressive_caching"] = false
 
 # Any post rated safe or questionable that has one of the following tags will automatically be rated explicit.
-CONFIG["explicit_tags"] = %w(pussy penis cum anal vibrator dildo masturbation oral_sex sex paizuri penetration guro rape asshole footjob handjob blowjob cunnilingus anal_sex)
+CONFIG["explicit_tags"] = %w(abortion bestiality cannibalism cbt cuntbusting dismantling furry guro hairy_armpits scat snuff yaoi)
 
 # After a post receives this many posts, new comments will no longer bump the post in comment/index.
 CONFIG["comment_threshold"] = 40
@@ -144,19 +144,19 @@ CONFIG["show_only_first_page"] = false
 CONFIG["enable_reporting"] = true
 
 # Enable some web server specific optimizations. Possible values include: apache, nginx, lighttpd.
-CONFIG["web_server"] = "apache"
+CONFIG["web_server"] = "nginx"
 
 # Show a link to Trac.
-CONFIG["enable_trac"] = true
+CONFIG["enable_trac"] = false # true
 
 # The image service name of this host, if any.
 CONFIG["local_image_service"] = ""
 
 # List of image services available for similar image searching.
 CONFIG["image_service_list"] = {
-  "danbooru.donmai.us" => "http://haruhidoujins.yi.org/multi-search.xml",
-  "moe.imouto.org" => "http://haruhidoujins.yi.org/multi-search.xml",
-  "konachan.com" => "http://haruhidoujins.yi.org/multi-search.xml"
+  # "danbooru.donmai.us" => "https://haruhidoujins.yi.org/multi-search.xml",
+  # "moe.imouto.org" => "https://haruhidoujins.yi.org/multi-search.xml",
+  # "konachan.com" => "https://haruhidoujins.yi.org/multi-search.xml"
 }
 
 # If true, image services receive a URL to the thumbnail for searching, which
@@ -168,7 +168,7 @@ CONFIG["image_service_local_searches_use_urls"] = true
 # for local_image_service.
 CONFIG["dupe_check_on_upload"] = false
 
-# Defines the various user levels. You should not remove any of the default ones. When Danbooru starts up, the User model will have several methods automatically defined based on what this config contains. For this reason you should only use letters, numbers, and spaces (spaces will be replaced with underscores). Example: is_member?, is_member_or_lower?, is_member_or_higher?
+# Defines the various user levels. You should not remove any of the default ones. When Moebooru starts up, the User model will have several methods automatically defined based on what this config contains. For this reason you should only use letters, numbers, and spaces (spaces will be replaced with underscores). Example: is_member?, is_member_or_lower?, is_member_or_higher?
 CONFIG["user_levels"] = {
   "Unactivated" => 0,
   "Blocked" => 10,
@@ -225,8 +225,9 @@ end
 
 # Defines the default blacklists for new users.
 CONFIG["default_blacklists"] = [
-  #  "rating:e loli",
-  #  "rating:e shota",
+  "rating:q lolicon",
+  "rating:q shotacon",
+  "rating:e"
 ]
 
 # Enable the artists interface.
@@ -276,10 +277,10 @@ suppress(LoadError) { require File.expand_path("../local_config", __FILE__) }
 CONFIG["email_from"] ||= CONFIG["admin_contact"]
 
 # Set default locale.
-CONFIG["default_locale"] ||= "en"
+CONFIG["default_locale"] ||= "zh_CN"
 
 CONFIG["server_host"] ||= "localhost"
-CONFIG["app_name"] ||= "DAN_SITENAME"
+CONFIG["app_name"] ||= "MOE_SITENAME"
 
 # Set default url_base if not set in local config.
 CONFIG["url_base"] ||= "http://#{CONFIG["server_host"] || "localhost"}"
@@ -291,7 +292,7 @@ CONFIG["standalone"] = true if CONFIG["standalone"].nil?
 CONFIG["bundler_groups"] ||= [:default, Rails.env]
 CONFIG["bundler_groups"] << "standalone" if CONFIG["standalone"]
 
-CONFIG["bgcolor"] ||= "gray"
+CONFIG["bgcolor"] ||= "black"
 
 CONFIG["threads"] ||= (ENV["MB_THREADS"] || 1).to_i
 

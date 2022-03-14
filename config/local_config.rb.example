@@ -2,7 +2,7 @@
 # Look at default_config.rb and copy over any settings you want to change.
 
 # You MUST configure these settings for your own server!
-CONFIG["app_name"] = "DAN_SITENAME"
+CONFIG["app_name"] = "MOE_SITENAME"
 CONFIG["server_host"] = "localhost"
 CONFIG["admin_contact"] = "webmaster@" + CONFIG["server_host"]
 
@@ -27,8 +27,8 @@ CONFIG["local_image_service"] = CONFIG["app_name"]
 # Use this config to enable AddThis social sharing buttons. Fill in the Profile ID.
 # CONFIG['addthis-id'] = 'ra-...'
 
-# Default language. Defaults to en.
-# CONFIG['default_locale'] = 'en'
+# Default language. Defaults to zh_CN.
+# CONFIG['default_locale'] = 'zh_CN'
 
 # Set to false to prevent loading of unicorn/puma (eg. to use passenger).
 # Default: true
@@ -36,9 +36,9 @@ CONFIG["local_image_service"] = CONFIG["app_name"]
 
 # Background color when resizing transparent PNG/GIF images.
 # Use web notation or check the list of possible colors here:
-#   http://www.imagemagick.org/script/color.php
-# Default: gray
-# CONFIG['bgcolor'] = 'gray'
+#   https://www.imagemagick.org/script/color.php
+# Default: balck
+# CONFIG['bgcolor'] = 'black'
 
 # Map tag type ids with names.
 # The primary one is the one starts with uppercase.

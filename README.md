@@ -1,4 +1,3 @@
-[![Code Climate](https://codeclimate.com/github/moebooru/moebooru.png)](https://codeclimate.com/github/moebooru/moebooru)
 
 Moebooru
 ========
@@ -53,7 +52,7 @@ After initializing PostgreSQL database, create user for moebooru with `createdb`
 * Initialize database with `bundle exec rake db:reset`
 * Run `bundle exec rake db:migrate`
 * Start the server (`bundle exec rails server`)
-* Start asset builder server (`npm run build -- --watch`)
+* Start asset builder server (`pnpm build --watch`)
 
 Configuration
 -------------
@@ -72,3 +71,4 @@ Plans
 * Bug fixes
 * Documentation
 * And more!
+
