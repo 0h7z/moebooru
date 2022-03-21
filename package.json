@@ -1,12 +1,12 @@
 {
 	"dependencies": {
-		"@babel/core": "^7.17.0",
+		"@babel/core": "^7.17.8",
 		"@babel/preset-env": "^7.16.11",
-		"@rails/ujs": "^7.0.1",
+		"@rails/ujs": "^7.0.2",
 		"autocompleter": "^6.1.2",
 		"coffeescript": "2.6.1",
 		"cropperjs": "^1.5.12",
-		"esbuild": "^0.14.16",
+		"esbuild": "^0.14.27",
 		"esbuild-coffeescript": "^2.0.0",
 		"esbuild-plugin-less": "^1.1.6",
 		"glob": "^7.2.0",
