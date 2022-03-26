@@ -20,9 +20,9 @@
       <% if @current_user %>
         <%= mail_to CONFIG["admin_contact"], "Contact", :encode => "javascript" %> &ndash;
       <% end %>
-      <%=t :static_serve %><%= number_with_delimiter Post.fast_count %><%=t :static_posts2 %>&ndash; <%=t :static_running %><%= CONFIG["version"] %>
+      <%=t :static_serve %><%= number_with_delimiter Post.fast_count %>
       <br />
-      <%=t :static_domain %><a href = "https://twitter.com/#!/akiba_rika">Akiba_Rika</a>
+      <%=t :static_posts2 %>&ndash; <%=t :static_running %><%= CONFIG["version"] %>
       <br />
       <%=t :static_translation %>
     </p>

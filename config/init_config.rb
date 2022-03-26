@@ -263,7 +263,7 @@ CONFIG["min_mpixels"] = nil
 # approved.
 CONFIG["hide_pending_posts"] = false
 
-CONFIG["available_locales"] = %w(de en es ja ru zh_CN zh_TW)
+CONFIG["available_locales"] = %w(en zh_CN)
 
 # Time to load local configurations.
 # The timing is probably wrong but whatever, I'll fix this later(tm).

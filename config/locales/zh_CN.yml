@@ -17,7 +17,7 @@ zh_CN:
     errors:
       models:
         wiki_page:
-          no_change: 页面内容/标题 无变化
+          no_change: 页面标题及内容无变化
     models:
       advertisement: 广告
   admin:
@@ -37,51 +37,51 @@ zh_CN:
   # view: /advertisements
   advertisements:
     edit:
-      title: "编辑广告#%{id}"
+      title: "编辑广告 #%{id}"
     index:
       reset_hit_count: 重置点击数
       title: 广告
     new:
       title: 新广告
     show:
-      title: "广告#%{id}"
+      title: "广告 #%{id}"
   # view: /artist
   artist:
     create:
-      alias_for: 别称 for
-      aliases: 别称
-      info: 用逗号开多个别称与组别内容
+      alias_for: 别名 for
+      aliases: 别名
+      info: 用逗号分隔多个别名与组别内容
       members: 成员
-      name: 绘师名
+      name: 画师名
       notes: 附注
       urls: URLs
     destroy:
-      confirm: 你确定删除%{name}吗？
-      title: 删除绘师
+      confirm: 确定要删除 %{name} 吗？
+      title: 删除画师
     footer:
       add: 添加
       help: 帮助
       list: 列表
     index:
       date: 日期
-      delete: 删除绘师
-      edit: 编辑绘师
-      find: 按绘师找图
-      is_alias: 此 绘师 是一个别称为
-      is_group: 该绘师（隶属于）一社团
-      last_modified: 最后编辑者为
+      delete: 删除画师
+      edit: 编辑画师
+      find: 按画师找图
+      is_alias: 此画师是一个别名为
+      is_group: 该画师（隶属于）一社团
+      last_modified: 最近编辑者为
       name: 名称
       search: 搜索
-      title: 绘师
+      title: 画师
       updated_by: 更新者
     update:
       preview: 预览附注
   # view: /banned
   banned:
     index:
-      expires_in: 这将会在 %{t} 到期.
+      expires_in: 这将会在 %{t} 到期
       permanent: 永久封禁
-      reason: 你已经被封禁
+      reason: 你已被封禁
   batch:
     create:
       files: 文件
@@ -120,13 +120,13 @@ zh_CN:
     search: 搜索
     select:
       all: 全选
-      invert: 反向选定
+      invert: 反选
     update: 更新
   basic:
-    page: Page %{page}
+    page: 第 %{page} 页
   c:
     pool:
-      not_found: "找不到id为%{id}的图集"
+      not_found: "找不到 ID 为 %{id} 的图集"
   # view: /comment
   comment:
     comment:
@@ -162,7 +162,7 @@ zh_CN:
       body: 正文
       delete: 删除
       select_all: 选择所有
-      select_invert: 反向选定
+      select_invert: 反选
       title: 管理评论
     search:
       author: 作者
@@ -171,7 +171,7 @@ zh_CN:
       submit: 搜索
       time: 时间
     show:
-      return: 回到图帖
+      return: 回到图片
       title: 评论
   confirmations:
     is_sure: 确定要这样做？
@@ -201,7 +201,7 @@ zh_CN:
         when: 时间
       title: 收件箱
     message:
-      sent_by_html: 由 %{user} %{x_ago} 前发送
+      sent_by_html: "%{user} 发送于 %{x_ago} 前"
   # view: /forum
   forum:
     add:
@@ -221,7 +221,7 @@ zh_CN:
       search: 搜索
       sticky: 置顶
       title: 论坛
-      updated: 最后更新
+      updated: 最近更新
       updated_by: 更新者
     new:
       help: 帮助
@@ -237,9 +237,9 @@ zh_CN:
       unlock: 解除锁定
       unstick: 解除置顶
     post_form:
-      post: Post
-      post_title: Title
-      preview: Preview
+      post: 发送
+      post_title: 标题
+      preview: 预览
     search:
       author: 作者
       last_updated: 按更新时间
@@ -262,7 +262,7 @@ zh_CN:
       about: 关于 Moebooru
       accounts: 账户
       api: API
-      artists: 绘师
+      artists: 画师
       bookmarklet: 书签
       bugs: Bugs
       cheat_sheet: 使用技巧
@@ -272,17 +272,17 @@ zh_CN:
       firefox_ext: 火狐拓展
       help: 帮助
       image_sampling: 图片示例
-      irc: IRC即时聊天
+      irc: IRC 即时聊天
       mass_tag_edit: 批量标签编辑
       notes: 附注
       pools: 图集
-      post_relationships: 图帖间的关系
+      post_relationships: 图片间的关系
       posts: 投稿
       ratings: 评级
       source: 源代码
       starting: 开始使用
       suggestions: 建议
-      tag_aliases: 标签别称
+      tag_aliases: 标签别名
       tag_implications: 标签映射
       tag_scripts: 标签脚本
       tags: 标签
@@ -336,8 +336,8 @@ zh_CN:
       remove: 移除图片
       remove_confirm: 确认移除吗?
       save: 更档保存
-      source: Source
-      tag: "Inline标签: 图像 #%{id}"
+      source: 来源
+      tag: "Inline 标签: 图像 #%{id}"
     footer:
       help: 帮助
       list: 列表
@@ -377,8 +377,8 @@ zh_CN:
   layout_name: "名称"
   layout_new_mail: "新邮件"
   layout_new_topic: "新主题"
-  layout_no_email: "您的账号档案中不包含email地址，所以我们不能为您重置密码。"
-  layout_not_exist: "此用户名之前无人注册.  若要创建新帐号, 请确认密码并登陆."
+  layout_no_email: "您的账号档案中不包含 Email 地址，所以我们不能为您重置密码。"
+  layout_not_exist: "此用户名尚未被注册.  若要创建新帐号, 请确认密码并登陆."
   layout_notes: "附注"
   layout_password: "密码"
   layout_pools: "图集"
@@ -389,7 +389,7 @@ zh_CN:
   layout_requests: "请求"
   layout_reset: "重置密码"
   layout_reset_successful: "密码重置中. 请在数分钟后检查你的电子邮箱."
-  layout_search_artists: "搜索绘师"
+  layout_search_artists: "搜索画师"
   layout_search_comments: "搜索评论"
   layout_search_forum: "搜索论坛"
   layout_search_notes: "搜索附注"
@@ -402,7 +402,7 @@ zh_CN:
   layout_tags: "标签"
   layout_unknown_user: "本帐号不存在."
   layout_upload: "上传"
-  layout_view_artists: "查看绘师"
+  layout_view_artists: "查看画师"
   layout_view_comments: "查看评论"
   layout_view_notes: "查看附注"
   layout_view_pools: "查看图集"
@@ -410,7 +410,7 @@ zh_CN:
   layout_view_tags: "查看标签"
   layout_wiki: "维基"
   layout_wiki_index: "查看维基索引"
-  layout_wrong_email: "email地址与帐号不相符."
+  layout_wrong_email: "Email 地址与帐号不相符."
   layouts:
     default:
       old_browser:
@@ -418,22 +418,22 @@ zh_CN:
         info: 你的浏览器太旧了，因此这个站点也许不能被正确的显示
         suggestion: 请考虑更新浏览器至较新版本
     login:
-      email: Email地址
-      email_info: 若你在创建帐号时提供电邮信箱或者在注册后更新电邮信息, 之后你可以重置登录密码.
+      email: Email 地址
+      email_info: 若你在创建帐号时提供 Email 地址或者在注册后更新 Email 地址, 之后你可以重置登录密码.
       info: 请先登录. 若要创建新帐号,您也可以在此输入您想要使用的用户名与密码.
       login: 登陆
       name: 用户名
       password: 密码
       password_confirm: 确认密码
       popup:
-        email_reset: "输入你在注册时填写的电邮信箱.  你将收到含新密码的电子邮件."
+        email_reset: "输入你在注册时填写的 Email 地址.  你将收到含新密码的电子邮件."
         exist: 此用户名已被注册.  若要创建新帐号, 请选择别的用户名.
         invalid_email: 向目标信箱发送邮件失败.
-        no_email: "您的账号档案中不包含email地址，所以我们不能为您重置密码。"
-        not_exist: "此用户名之前无人注册.  若要创建新帐号, 请确认密码并登陆."
+        no_email: "您的账号档案中不包含 Email 地址，所以我们不能为您重置密码。"
+        not_exist: "此用户名尚未被注册.  若要创建新帐号, 请确认密码并登陆."
         reset_successful: 密码已重置。请查收您的电子邮件。
         unknown_user: 本帐号不存在.
-        wrong_email: email地址与帐号不相符.
+        wrong_email: Email 地址与帐号不相符.
       reset: 重置密码
     menu:
       account:
@@ -447,10 +447,10 @@ zh_CN:
         reset: 重置密码
         settings: 设置
       artists:
-        _: 绘师
+        _: 画师
         create: 新建
-        search: 搜索绘师
-        view: 查看绘师
+        search: 搜索画师
+        view: 查看画师
       comments:
         _: 评论
         moderate: 管理
@@ -498,7 +498,7 @@ zh_CN:
         view: 看贴
       tags:
         _: 标签
-        aliases: 别称
+        aliases: 别名
         edit: 编辑
         implications: 关联
         mass_edit: 批量编辑
@@ -541,19 +541,19 @@ zh_CN:
     add_post:
       add: 添加项
       cancel: 取消
-      info: "选择将此图帖要加入的图集:"
+      info: "选择要将此图片加入的图集:"
       order: 排序
       pool: 图集
       title: 添加到图集
     copy:
       copy: 复制图集
-      name: 绘师名
+      name: 画师名
       title: 复制克隆
     create:
       cancel: 取消
       description: 描述
       is_public: 公开此图集吗?
-      name: 绘师名
+      name: 画师名
       save: 保存
       title: 创建图集
     destroy:
@@ -573,14 +573,14 @@ zh_CN:
       table:
         created: 创建时间
         creator: 创建者
-        name: 绘师名
+        name: 画师名
         posts: 帖子
-        updated: 最后更新
+        updated: 最近更新
       title: "%{q} - 图集"
       title_main: 图集
     order:
       auto_order: 自动排序
-      info: 图帖将以升序排列.
+      info: 图片将以升序排列.
       interval: 输入步长
       minus_one: "-1"
       order: 排序
@@ -603,7 +603,7 @@ zh_CN:
         order: 排序
         png: 下载
         toggle_view: 切换视图
-        transfer: 转移图帖数据
+        transfer: 转移图片数据
       title: "图集: %{name}"
     transfer_metadata:
       from:
@@ -621,17 +621,17 @@ zh_CN:
         tags: 标签
         to: To
         transfer: 转移
-      title_html: "将%{from}图集中的图片数据转移到%{to}图集中"
+      title_html: "将 %{from} 图集中的图片数据转移到 %{to} 图集中"
     update:
       form:
         description: 描述
         is_active:
           _: 活动
-          info: "非活动的图集将不再出现在图帖的添加到图集的下拉菜单中."
+          info: "非活动的图集将不再出现在图片的添加到图集的下拉菜单中."
         is_public:
           _: "公开此图集吗?"
-          info: "公开图集允许任何用户增减图帖."
-        name: 绘师名
+          info: "公开图集允许任何用户增减图片."
+        name: 画师名
       title: 编辑图集
   post:
     blacklists:
@@ -659,7 +659,7 @@ zh_CN:
       frames: 边框
       held:
         activate: (激活)
-        info: 此图帖被上传者挂起.
+        info: 此图片被上传者挂起.
       hidden: 隐藏
       image_hidden:
         info: 按照你的帐号设定这张图片不显示.
@@ -676,11 +676,11 @@ zh_CN:
       reason: 原因
       score: 得分
       shown_in_index: 在索引中显示
-      source: Source
+      source: 来源
     delete:
       delete: 删除
       noaccess_info: (由于访问限制父项帖隐藏)
-      noparent_info: 此投稿没有父项。如果此投稿将被其他投稿替代，请在删除前先重新parent，这样投票将自动转移。
+      noparent_info: 此投稿没有父项。如果此投稿将被其他投稿替代，请在删除前先重新 parent，这样投票将自动转移。
       parent_info: 用户评分将随父项帖子一同转移. 若出现问题, 在删除帖子前重新将其设为父项.
       permanent: 永久性删除
       permanent_info: 此帖已被删除. 再次删除将使其永久性删除.
@@ -719,7 +719,7 @@ zh_CN:
       rating: 评级
       score: 分数
     index:
-      activate: 激活所有被挂起的图帖
+      activate: 激活所有被挂起的图片
       ambiguous: 以下标签是有歧义的
       edit_tags: 编辑标签
       held_html: 你已挂起 %{count}
@@ -729,7 +729,7 @@ zh_CN:
       mode_form:
         approve: 通过投稿
         edit: 编辑帖子
-        flag: 往此贴插旗
+        flag: 标记此贴
         pool_remove: 从图池移除
         reparent: 将帖子重置为父项
         script: 使用标签脚本
@@ -761,7 +761,7 @@ zh_CN:
       popular:
         _: 人气
         month: 人气 (按月)
-        week: 人气 （按周）
+        week: 人气 (按周)
       title: 正在浏览 %{year}/%{month}
     popular_by_week:
       popular:
@@ -795,7 +795,7 @@ zh_CN:
         random: 随机
     show_partials:
       edit:
-        find_artists: 搜索绘师
+        find_artists: 搜索画师
         help: 帮助
         note_locked: 附注已被锁定
         parent: 父投稿
@@ -804,14 +804,14 @@ zh_CN:
         rating_locked: 评分锁定
         rating_locked_info: 分级已被锁定
         related:
-          artists: 相关绘师
+          artists: 相关画师
           characters: 相关角色
           copyrights: 相关版权
           none: 无
           tags: 相关的标签
         save: 更档保存
         shown_in_index: 在索引中显示
-        source: Source
+        source: 来源
         tags: 编辑标签
         tags_info_html: 以空格分隔不同标签 (%{more})
       history_panel:
@@ -842,7 +842,7 @@ zh_CN:
           add: 加入收藏
           remove: 从收藏中移除
         flag: 标记删除
-        history: 图帖历史
+        history: 图片历史
         resize: 重置图片尺寸
         set_avatar: 设置头像
         title: 选项
@@ -865,7 +865,7 @@ zh_CN:
           similar: 查找类似
         next: 下一张
         parent: 父项
-        previous: 前一张
+        previous: 上一张
         random: 随机
         title: 关联投稿
       statistics_panel:
@@ -873,7 +873,7 @@ zh_CN:
         favorited_by: 收藏者：
         id: Id
         posted: 已投稿
-        posted_data_html: "%{time} by %{user}"
+        posted_data_html: "%{user} 于 %{time}"
         rating: 评分
         score: 得分
         size: 尺寸
@@ -884,11 +884,11 @@ zh_CN:
         deleted_info: 该投稿已被删除。
         flagged:
           delete: 删除
-          info: "This post was flagged for deletion by %{user}. Reason: %{reason}."
+          info: "这张图片被 %{user} 标记为删除. 原因: %{reason}."
           unflag: 撤销标记
         held:
           activate: 激活本帖
-          info: 此图帖被上传者暂时挂起.
+          info: 此图片被上传者暂时挂起.
         parent:
           child: 子项
           child_post_html: "投稿 #%{child}"
@@ -900,7 +900,7 @@ zh_CN:
         pending:
           approve:
             _: 通过
-            confirm: 真的要通过这项投稿？
+            confirm: 确定要通过这项投稿？
           delete: 删除
           info: 此图片正在等待管理员审核。
         reason: 原因
@@ -908,7 +908,7 @@ zh_CN:
           always_view_original: 只看原图
           hide: 隐藏此信息
           info_html: 此图片已经被酌情缩小。如需查看高分辨率版本，请点击侧边栏上的%{larger}链接。
-          view_larger: 点击查看大图
+          view_larger: 查看大图
         samples_disabled: 显示图片样张功能已被关闭. 若你感到浏览效率降低,请在帐号设定中打开显示样张功能.
     similar:
       apply_tag_script: 使用标签脚本
@@ -922,13 +922,13 @@ zh_CN:
         info_guide_html: Your post may be a duplicate. Please read the %{guide}.
         info_reparent_html: If your post is a better version of an existing one, but the old post should remain, %{reparent} the old post.
         info_mark_duplicate_html: If your post is a better version of an existing one, and the old post should be deleted, %{mark_duplicate}.
-        mark_duplicate: 往旧版本上插重复旗帜
+        mark_duplicate: 标记为重复
         reparent: reparent
       edit_posts: 编辑帖子
       edit_tags: 编辑标签
       file: 文件
-      flag_duplicate: 插旗：此图重复
-      flag_post: 插旗
+      flag_duplicate: 标记：此图重复
+      flag_post: 标记
       mode: Mode
       mode_color: "不忽略颜色"
       mode_gray: 忽略颜色
@@ -951,9 +951,9 @@ zh_CN:
       anonymous: 匿名上传
       form:
         file: File
-        find_artist: 找到绘师
+        find_artist: 找到画师
         find_related:
-          artists: 相关绘师
+          artists: 相关画师
           characters: 相关角色
           circles: 相关社团
           copyrights: 相关版权
@@ -1057,11 +1057,11 @@ zh_CN:
   static21: "用户投票"
   static22: "工作任务"
   static23: "帮助"
-  static24: "别称"
+  static24: "别名"
   static25: "关联项"
   static26: "编辑"
-  static27: "列表（云形）"
-  static28: "列表（所有）"
+  static27: "列表（标签云）"
+  static28: "列表（所有标签）"
   static29: "批量编辑"
   static3: "列表"
   static30: "帮助"
@@ -1081,8 +1081,8 @@ zh_CN:
   static43: "帮助"
   static44: "列表"
   static45: "历史"
-  static46: "Source"
-  static47: "原始Danbooru"
+  static46: "源码"
+  static47: "上游"
   static48: "登录"
   static49: "注册"
   static5: "以图搜图"
@@ -1125,7 +1125,7 @@ zh_CN:
   static_t3: "报告"
   static_t4: "标签"
   static_t5: "附注"
-  static_t6: "绘师"
+  static_t6: "画师"
   static_t7: "图集"
   static_t8: "评论"
   static_t9: "论坛"
@@ -1157,19 +1157,19 @@ zh_CN:
       add: 添加
       add_new:
         alias_to: 等同于
-        info: 您可以建议一个别称，但它必须待管理员审核通过后才能生效
+        info: 您可以建议一个别名，但它必须待管理员审核通过后才能生效
         name: 用户名
         submit: 提交
-        title: 添加别称
-      alias: 别称
+        title: 添加别名
+      alias: 别名
       approve: 通过
       delete: 删除
       pending: 选择审核中的 别名
       reason: 理由
-      search: 搜索别称
+      search: 搜索别名
       title: 等同的标签
       to: To
-  tag_aliases: "别称"
+  tag_aliases: "别名"
   tag_amb: "多义"
   tag_cancel: "取消"
   tag_cloud: "没有标签"
@@ -1220,13 +1220,13 @@ zh_CN:
     x_ago_html: "%{t} 前"
   user:
     change_email:
-      current_email: 当前Email地址
+      current_email: 当前 Email 地址
       current_password: 当前密码
-      new_email: 新Email地址
-      title: Change Email Address
+      new_email: 新 Email 地址
+      title: 更改 Email 地址
     change_password:
       new_password: 新密码
-      title: Change Password
+      title: 更改密码
     edit:
       email: Email
       no_email: 无
@@ -1243,7 +1243,7 @@ zh_CN:
       my_favorites: 我的收藏
       my_mail: 我的邮件
       my_profile: 个人资料
-      no_signup: 注册当前未开放
+      no_signup: 当前未开放注册
       not_logged_in: 您未登录
       reset_password: 重置密码
       settings: 设置
@@ -1288,7 +1288,7 @@ zh_CN:
   user24: "第二语言"
   user25: "不要翻译从"
   user3: "邮箱"
-  user4: "需要一个email地址以激活你的账号"
+  user4: "需要一个 Email 地址以激活你的账号"
   user5: "此项是选填项。它将会在你忘记密码并且想要重置密码时有用。"
   user6: "订阅标签"
   user7: "编辑标签"
@@ -1315,7 +1315,7 @@ zh_CN:
   user_fav2: "收藏"
   user_fav3: "收藏"
   user_forum_post: "论坛投稿"
-  user_home: "您当前未登录。"
+  user_home: "您尚未登录。"
   user_home10: "» 我的邮件"
   user_home11: "» 我的收藏"
   user_home12: "» 设置"
@@ -1369,21 +1369,21 @@ zh_CN:
   user_record_add: "添加"
   user_record_none: "无"
   user_resend: "如果您没有收到您的确认信，请确认它没有被您邮箱的垃圾邮件过滤器截获。"
-  user_resend_email: "Email地址"
+  user_resend_email: "Email 地址"
   user_resend_submit: "提交"
   user_reset: "重置密码"
-  user_reset_email: "Email地址"
+  user_reset_email: "Email 地址"
   user_reset_name: "用户名"
-  user_reset_text: "如果您在注册时填写了一个Email地址，或者在注册之后已经为您的账户添加了一个Email地址，您可以重置您的密码。您将会收到一封包含了您的新密码的电子邮件。"
+  user_reset_text: "如果您在注册时填写了一个 Email 地址，或者在注册之后已经为您的账户添加了一个Email地址，您可以重置您的密码。您将会收到一封包含了您的新密码的电子邮件。"
   user_save: "保存"
   user_send_msg: "发送消息"
   user_set_avatar: "设置头像"
   user_signup: "注册"
-  user_signup_email: "Email地址"
+  user_signup_email: "Email 地址"
   user_signup_email_text: "可选，供邮箱验证及密码重置。"
-  user_signup_email_text_wa: "Required for account activation, email notifications and password resets."
+  user_signup_email_text_wa: "Required for account activation, email notifications, and password resets."
   user_signup_name: "用户名"
-  user_signup_name_text: "请记住你的名字将可以通过Google被轻易的搜索到在这个网站上。"
+  user_signup_name_text: "请记住你的名字将可以通过 Google 被轻易的搜索到在这个网站上。"
   user_signup_text: "注册"
   user_signup_text2: "注册功能当前关闭"
   user_signup_text3: "当你建立账户时，同时表明你同意"
@@ -1402,7 +1402,7 @@ zh_CN:
   user_votes: "评分"
   user_when: "When"
   # user record
-  user_wiki_edits: "Wiki编辑次数"
+  user_wiki_edits: "Wiki 编辑次数"
   users: "用户"
   users_deleted: "已删除"
   users_joined: "已加入"
@@ -1416,7 +1416,7 @@ zh_CN:
   users_search: "搜索"
   wiki:
     diff:
-      title: Wiki Diff比较
+      title: Wiki Diff 比较
     footer:
       list: 列表
       new: 新建
@@ -1430,19 +1430,19 @@ zh_CN:
   # Client side (javascript) specific translations
   js:
     comment:
-      flag_ask: Flag this comment?
-      flag_process: Flagging comment for deletion...
-      flag_notice: Comment flagged for deletion
-      quote_error: Error quoting comment
-      delete_ask: Are you sure you want to delete this comment?
-      delete_error: "Error deleting comment: "
-    denied: Access Denied
+      flag_ask: 标记这条评论？
+      flag_process: 正在标记为删除…
+      flag_notice: 已标记为删除
+      quote_error: 引用评论时出错
+      delete_ask: 确定删除这条评论？
+      delete_error: "删除评论时出错: "
+    denied: 拒绝访问
     dmail:
       fetch_prev_msg: Fetching previous messages...
       prev_msg_loaded: Previous messages loaded
-    error: "Error: "
+    error: "错误: "
     forum:
-      mark_as_read: Marked all topics as read
+      mark_as_read: 标记所有主题为已读
       quote_error: Error quoting forum post
     no_translation: "No translation: "
     noone: no one

@@ -28,7 +28,7 @@ CONFIG["local_image_service"] = CONFIG["app_name"]
 # CONFIG['addthis-id'] = 'ra-...'
 
 # Default language. Defaults to zh_CN.
-# CONFIG['default_locale'] = 'zh_CN'
+# CONFIG['default_locale'] = 'en'
 
 # Set to false to prevent loading of unicorn/puma (eg. to use passenger).
 # Default: true
