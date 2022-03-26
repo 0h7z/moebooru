@@ -8,6 +8,7 @@
 /public/assets
 /public/cache
 /public/data
+/public/javascripts
 /public/robots.txt
 /public/sitemap*.xml.gz
 /tmp
