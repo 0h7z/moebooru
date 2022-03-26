@@ -368,7 +368,6 @@ en:
         type: Type
       title: "Job #%{id}"
   layout_login: "Login"
-  layout_login: "Login"
   layout_login_text: "Please log in. To create a new account, enter the name and password you want to use."
   layout_logout: "Logout"
   layout_mail: "My Mail"
@@ -384,13 +383,11 @@ en:
   layout_password: "Password"
   layout_pools: "Pools"
   layout_popular: "Popular"
-  layout_popular: "Popular"
   layout_posts: "Posts"
   layout_profile: "My Profile"
   layout_random: "Random"
   layout_requests: "Requests"
   layout_reset: "Reset Password"
-  layout_reset: "Reset password"
   layout_reset_successful: "Password reset. Check your email in a few minutes."
   layout_search_artists: "Search Artists"
   layout_search_comments: "Search Comments"
@@ -640,7 +637,7 @@ en:
     blacklists:
       add: Add
       hidden_posts: Hidden Posts
-      info: Posts containing all tags will be hidden. Seperate tags with spaces.
+      info: Posts containing all tags will be hidden. Separate tags with spaces.
     browse:
       add: Add frame
       by:
@@ -1139,7 +1136,6 @@ en:
   static_wiki_text: "Wiki"
   sub_add: "Add"
   sub_edit: "Edit Tag Subscriptions"
-  sub_edit: "edit"
   # view: /user
   sub_name: "Name"
   sub_none: "None"
@@ -1311,7 +1307,6 @@ en:
   user_current_invites_text: "These are the users you have invited so far."
   user_deleted_posts: "Deleted Posts"
   user_duration: "Duration (days)"
-  user_duration: "Duration (days)"
   user_edit: "(edit)"
   user_edits: "Edits"
   user_expire2: " ; expires: "
@@ -1367,7 +1362,6 @@ en:
   user_password_text: "Minimum of five characters."
   user_posts: "Posts"
   user_reason: "Reason"
-  user_reason: "Reason"
   user_reason2: "(reason: "
   user_reason3: ")"
   user_rec_invites: "Recent Invites"
@@ -1387,7 +1381,7 @@ en:
   user_signup: "Signup"
   user_signup_email: "Email"
   user_signup_email_text: "Optional, for email notifications and password resets."
-  user_signup_email_text_wa: "Required for account activation, email notifications and password resets."
+  user_signup_email_text_wa: "Required for account activation, email notifications, and password resets."
   user_signup_name: "Name"
   user_signup_name_text: "Please remember your name will be easy to Google on this site."
   user_signup_text: "Signup"
@@ -1398,14 +1392,12 @@ en:
   user_signup_text6: "Remember that this site is open to web crawlers, so people will be able to easily search your name."
   user_sub2: "Tag Subscription: "
   user_submit: "Submit"
-  user_submit: "Submit"
   user_subs: "Tag Subscriptions"
   user_tag_edits: "Tag Edits"
   user_unblock: "Unblock"
   user_uploaded: "Uploaded "
   user_uploaded_tags: "Uploaded Tags"
   user_uploads: "Uploads"
-  user_user: "User"
   user_user: "User"
   user_votes: "Votes"
   user_when: "When"
@@ -1414,7 +1406,6 @@ en:
   users: "Users"
   users_deleted: "Deleted"
   users_joined: "Joined"
-  users_level: "Level"
   users_level: "Level"
   users_name: "Name"
   users_neg: "% Neg"

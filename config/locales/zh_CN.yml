@@ -34,6 +34,7 @@ zh_CN:
       name: 用户名
       reset: 重置
       title: 重置密码
+  # view: /advertisements
   advertisements:
     edit:
       title: "编辑广告#%{id}"
@@ -44,6 +45,7 @@ zh_CN:
       title: 新广告
     show:
       title: "广告#%{id}"
+  # view: /artist
   artist:
     create:
       alias_for: 别称 for
@@ -74,6 +76,7 @@ zh_CN:
       updated_by: 更新者
     update:
       preview: 预览附注
+  # view: /banned
   banned:
     index:
       expires_in: 这将会在 %{t} 到期.
@@ -119,9 +122,12 @@ zh_CN:
       all: 全选
       invert: 反向选定
     update: 更新
+  basic:
+    page: Page %{page}
   c:
     pool:
       not_found: "找不到id为%{id}的图集"
+  # view: /comment
   comment:
     comment:
       delete: 删除
@@ -196,14 +202,11 @@ zh_CN:
       title: 收件箱
     message:
       sent_by_html: 由 %{user} %{x_ago} 前发送
+  # view: /forum
   forum:
     add:
       post: 发送
       title: 标题
-    edit:
-      post: 发送
-      post_title: 标题
-      preview: 预览
     index:
       created_by: 创建者
       help: 帮助
@@ -223,9 +226,6 @@ zh_CN:
     new:
       help: 帮助
       list: 列表
-      post: 发送
-      post_title: 标题
-      preview: 预览
       title: 新主题
     post:
       delete: 删除
@@ -236,6 +236,10 @@ zh_CN:
       stick: 置顶
       unlock: 解除锁定
       unstick: 解除置顶
+    post_form:
+      post: Post
+      post_title: Title
+      preview: Preview
     search:
       author: 作者
       last_updated: 按更新时间
@@ -252,6 +256,7 @@ zh_CN:
       post: 发送
       preview: 预览
       reply: 回复
+  # view: /help
   help:
     index:
       about: 关于 Moebooru
@@ -288,6 +293,7 @@ zh_CN:
       advertisement:
         create: 新建
         update: 保存
+  # view: /history
   history:
     index:
       change: 更改
@@ -308,6 +314,7 @@ zh_CN:
         tags: 标签
       undo: 撤销
       user: 用户
+  # view: /inline
   inline:
     crop:
       crop_avatar: 选择区域然后按下回车键以裁剪图片。这个操作将无法被撤销。
@@ -608,6 +615,7 @@ zh_CN:
       info_truncated_warning: "请检查加注到投稿上的标签是否正确."
       info_what: "标签和评级将会被转移, 旧投稿将成为新投稿的父项."
       reverse: 撤销
+      reverse_text_html: "%{reverse} the transfer"
       table:
         from: 来自
         tags: 标签
@@ -631,7 +639,9 @@ zh_CN:
       hidden_posts: 隐藏帖
       info: 含以下标签的贴将被隐藏。用空格来标签分隔不同标签.
     browse:
+      add: Add frame
       by:
+        # Posted / <x> ago / by <user>
         all_html: "%{text} %{ago} %{by}"
         by_html: by %{user}
         text: 已投稿
@@ -725,6 +735,7 @@ zh_CN:
         script: 使用标签脚本
         view: 看贴
       pool_view_html: 正在浏览图池 %{pool}.
+      title: ! /%{tags}
     moderate:
       down: down
       flagged: 标记的
@@ -739,6 +750,7 @@ zh_CN:
       tags: 标签
       title: 管理队列
       uploaded_by_when_html: 上传于 %{u} %{t_ago} (%{mod})
+      vote_down_html: vote %{down}
     popular_by_day:
       popular:
         _: 人气
@@ -765,6 +777,7 @@ zh_CN:
       title: 正在浏览 %{period}
     post_atom:
       data: 图片数据
+      dimension: Dimension
       source: 来源
     posts:
       empty: 没有结果!
@@ -871,6 +884,7 @@ zh_CN:
         deleted_info: 该投稿已被删除。
         flagged:
           delete: 删除
+          info: "This post was flagged for deletion by %{user}. Reason: %{reason}."
           unflag: 撤销标记
         held:
           activate: 激活本帖
@@ -879,6 +893,9 @@ zh_CN:
           child: 子项
           child_post_html: "投稿 #%{child}"
           children: 子投稿
+          has_child_html: This post has %{child}.
+          has_parent_html: This post belongs to a %{parent}.
+          make_parent: make this post the parent
           parent: 父投稿
         pending:
           approve:
@@ -895,15 +912,24 @@ zh_CN:
         samples_disabled: 显示图片样张功能已被关闭. 若你感到浏览效率降低,请在帐号设定中打开显示样张功能.
     similar:
       apply_tag_script: 使用标签脚本
+      down: down
       duplicate:
         blacklist: 被隐藏的投稿
         delete: 请删除你刚才发的贴
+        guide: duplicate post guidelines
+        info_blacklist_html: Your tag blacklist has hidden some potential duplicates. Use %{blacklist} in the sidebar to view hidden posts.
+        info_delete_html: Otherwise, please %{delete}.
+        info_guide_html: Your post may be a duplicate. Please read the %{guide}.
+        info_reparent_html: If your post is a better version of an existing one, but the old post should remain, %{reparent} the old post.
+        info_mark_duplicate_html: If your post is a better version of an existing one, and the old post should be deleted, %{mark_duplicate}.
         mark_duplicate: 往旧版本上插重复旗帜
+        reparent: reparent
       edit_posts: 编辑帖子
       edit_tags: 编辑标签
       file: 文件
       flag_duplicate: 插旗：此图重复
       flag_post: 插旗
+      mode: Mode
       mode_color: "不忽略颜色"
       mode_gray: 忽略颜色
       options: 选项
@@ -924,6 +950,7 @@ zh_CN:
       already_exists: 此投稿已存在
       anonymous: 匿名上传
       form:
+        file: File
         find_artist: 找到绘师
         find_related:
           artists: 相关绘师
@@ -936,24 +963,31 @@ zh_CN:
         parent: 父项
         rating:
           _: 评级
+          info: Explicit tags include sex, pussy, penis, masturbation, blowjob, etc.
         source:
           _: 来源
           info: 你可以在这里输入一个链接（URL）以从另一个网站上导入图像
         tags:
           _: 标签
+          info: Separate tags with spaces.
         upload: 上传
       guidelines:
         do_not:
+          compression_artifacts: compression artifacts
           obnoxious_watermarks: 不良水印
+          tags_html: Do not upload %{tags} art
+          with_html: Do not upload things with %{with}
         group: 同人志团体，漫画页，以及类似的CG
         info: 上传时，请小心遵守下面的准则。任何违反准则的行为将会导致封禁。
         last_word_connector_or: "，或"
         limit: 你今天只能上传 %{n} 张。
         more_html: 请阅读 %{more_link}
+        more_link: tagging guidelines
         title: 上传准则
       posts_deleted:
         hide: 忽略这条信息
         notice_plural_html: 你的一些投稿属于 %{recently_deleted}.
+        notice_singular_html: One of your posts was %{recently_deleted}.
         recently: 最近被删除
       title: 上传
   ratings:
@@ -965,6 +999,7 @@ zh_CN:
   record_add: "增加记录 为"
   record_add2: "添加"
   record_ago: "前"
+  record_ago2: ""
   record_body: "正文"
   record_cancel: "取消"
   record_delete: "删除"
@@ -992,11 +1027,20 @@ zh_CN:
   report_user: "用户"
   report_votes: "报告：用户评分"
   report_votes2: "评分"
+  # moderator_report is admin stuff anyways
+  # static
   report_votes_text: "本报告显示：该用户在3天内参与过评分."
   report_wiki: "维基"
+  settings:
+    api:
+      show:
+        info: Your API Key
+        reset: Reset
+        title: API Key
   static:
     index:
       search: 搜索
+  # view: /help
   static1: "帮助"
   static10: "随机"
   static11: "最近删除"
@@ -1062,18 +1106,21 @@ zh_CN:
   static_comments: "评论"
   static_comments_text: "生成所有评论的明细列表"
   static_domain: "域名提供者"
+  # credits for translation put in your nickname
   static_more: "网站地图"
   static_posts: "帖子"
   static_posts2: " 帖子 "
   static_posts_text: "生成所有贴的明细列表"
   static_running: "运行Moebooru "
   static_search: "搜索"
+  # try to fix ago problem
   static_serve: "服务器 "
   static_t1: "投稿"
   static_t10: "Wiki"
   static_t11: "杂项"
   static_t12: "用户"
   static_t13: "管理"
+  # terms of service should be moved to wiki?
   static_t2: "工具"
   static_t3: "报告"
   static_t4: "标签"
@@ -1084,10 +1131,12 @@ zh_CN:
   static_t9: "论坛"
   static_tags: "标签"
   static_tags_text: "生成所有标签的明细列表"
+  static_translation: ""
   static_wiki: "维基"
   static_wiki_text: "维基"
   sub_add: "添加"
   sub_edit: "编辑"
+  # view: /user
   sub_name: "名称"
   sub_none: "无"
   sub_save: "保存"
@@ -1146,6 +1195,7 @@ zh_CN:
       search: 搜索关联项
       select_pending: 选择审核中的投稿
       title: 关联标签
+  # tag imp
   tag_js: "你确定要对这个标签进行编辑？"
   tag_js_preview: "预览"
   tag_js_preview_txt: "加载中…"
@@ -1157,6 +1207,7 @@ zh_CN:
   tag_popular: "人气"
   tag_popular_day: "人气 按 日"
   tag_popular_month: "人气 按 月"
+  # tag alias
   tag_popular_week: "人气 按 周"
   tag_posts: "投稿"
   tag_save: "保存"
@@ -1164,6 +1215,7 @@ zh_CN:
   tag_type: "类型"
   tag_wild: "使用 * 作为通配符"
   time:
+    # t: "16 days", "1 hour", etc (localized)
     x_ago: "%{t} 前"
     x_ago_html: "%{t} 前"
   user:
@@ -1171,8 +1223,10 @@ zh_CN:
       current_email: 当前Email地址
       current_password: 当前密码
       new_email: 新Email地址
+      title: Change Email Address
     change_password:
       new_password: 新密码
+      title: Change Password
     edit:
       email: Email
       no_email: 无
@@ -1214,6 +1268,7 @@ zh_CN:
       title: 被封禁用户
     signup:
       title: 注册
+  # user
   user1: "标签黑名单"
   user10: "或编辑投稿"
   user11: "调整图像大小"
@@ -1326,6 +1381,7 @@ zh_CN:
   user_signup: "注册"
   user_signup_email: "Email地址"
   user_signup_email_text: "可选，供邮箱验证及密码重置。"
+  user_signup_email_text_wa: "Required for account activation, email notifications and password resets."
   user_signup_name: "用户名"
   user_signup_name_text: "请记住你的名字将可以通过Google被轻易的搜索到在这个网站上。"
   user_signup_text: "注册"
@@ -1345,6 +1401,7 @@ zh_CN:
   user_user: "用户"
   user_votes: "评分"
   user_when: "When"
+  # user record
   user_wiki_edits: "Wiki编辑次数"
   users: "用户"
   users_deleted: "已删除"
@@ -1370,3 +1427,30 @@ zh_CN:
       title: Wiki
     recent_changes:
       title: 最近更改
+  # Client side (javascript) specific translations
+  js:
+    comment:
+      flag_ask: Flag this comment?
+      flag_process: Flagging comment for deletion...
+      flag_notice: Comment flagged for deletion
+      quote_error: Error quoting comment
+      delete_ask: Are you sure you want to delete this comment?
+      delete_error: "Error deleting comment: "
+    denied: Access Denied
+    dmail:
+      fetch_prev_msg: Fetching previous messages...
+      prev_msg_loaded: Previous messages loaded
+    error: "Error: "
+    forum:
+      mark_as_read: Marked all topics as read
+      quote_error: Error quoting forum post
+    no_translation: "No translation: "
+    noone: no one
+    said: "said:"
+    vote:
+      remove: Remove vote
+      good: Good
+      great: Great
+      fav: Favorite
+      saved: Vote saved
+      voting: Voting...
