@@ -36,14 +36,14 @@ zh_CN:
       title: 重置密码
   advertisements:
     edit:
-      title: '编辑广告#%{id}'
+      title: "编辑广告#%{id}"
     index:
       reset_hit_count: 重置点击数
       title: 广告
     new:
       title: 新广告
     show:
-      title: '广告#%{id}'
+      title: "广告#%{id}"
   artist:
     create:
       alias_for: 别称 for
@@ -105,8 +105,8 @@ zh_CN:
       url: URL
       username: 用户
   buttons:
-    _no: '否'
-    _yes: '是'
+    _no: "否"
+    _yes: "是"
     add: 添加
     approve: 通过
     back: 返回
@@ -239,7 +239,7 @@ zh_CN:
     search:
       author: 作者
       last_updated: 按更新时间
-      last_updated_by: '%{t_ago} by %{u}'
+      last_updated_by: "%{t_ago} by %{u}"
       message: 消息
       post_title: 标题
       search: 搜索
@@ -330,7 +330,7 @@ zh_CN:
       remove_confirm: 确认移除吗?
       save: 更档保存
       source: Source
-      tag: 'Inline标签: 图像 #%{id}'
+      tag: "Inline标签: 图像 #%{id}"
     footer:
       help: 帮助
       list: 列表
@@ -359,7 +359,7 @@ zh_CN:
         message: 消息
         status: 状态
         type: 类型
-      title: '项目 #%{id}'
+      title: "项目 #%{id}"
   layout_login: "登录"
   layout_login_text: "登录. 创建新帐号, 输入用户名与密码."
   layout_logout: "登出"
@@ -534,7 +534,7 @@ zh_CN:
     add_post:
       add: 添加项
       cancel: 取消
-      info: '选择将此图帖要加入的图集:'
+      info: "选择将此图帖要加入的图集:"
       order: 排序
       pool: 图集
       title: 添加到图集
@@ -550,7 +550,7 @@ zh_CN:
       save: 保存
       title: 创建图集
     destroy:
-      confirm: '你确定要删除图集 %{name} 吗？'
+      confirm: "你确定要删除图集 %{name} 吗？"
       title: 删除
     footer:
       help: 帮助
@@ -560,7 +560,7 @@ zh_CN:
       import: 导入
       info: 在进行标签搜索后，你可以往图集中导入所有符合条件的帖子.
       search: 搜索
-      title: '导入图集: %{name}'
+      title: "导入图集: %{name}"
     index:
       search: 搜索
       table:
@@ -569,21 +569,21 @@ zh_CN:
         name: 绘师名
         posts: 帖子
         updated: 最后更新
-      title: '%{q} - 图集'
+      title: "%{q} - 图集"
       title_main: 图集
     order:
       auto_order: 自动排序
       info: 图帖将以升序排列.
       interval: 输入步长
-      minus_one: '-1'
+      minus_one: "-1"
       order: 排序
-      plus_one: '+1'
+      plus_one: "+1"
       reverse: 撤销
-      title_html: '排序图集: %{name}'
+      title_html: "排序图集: %{name}"
     select_form:
       add: 添加项
     show:
-      delete_mode_info: '启动删除模式后, 点击缩略图标即可把帖子从图集中删去.'
+      delete_mode_info: "启动删除模式后, 点击缩略图标即可把帖子从图集中删去."
       links:
         copy: 复制
         delete: 删除
@@ -597,32 +597,32 @@ zh_CN:
         png: 下载
         toggle_view: 切换视图
         transfer: 转移图帖数据
-      title: '图集: %{name}'
+      title: "图集: %{name}"
     transfer_metadata:
       from:
         from: 来自
-        from_number: '从图集序号转换'
+        from_number: "从图集序号转换"
         to: To
         transfer: 转移
       info_truncated: "以下图集中投稿的数量不相等."
-      info_truncated_warning: '请检查加注到投稿上的标签是否正确.'
-      info_what: '标签和评级将会被转移, 旧投稿将成为新投稿的父项.'
+      info_truncated_warning: "请检查加注到投稿上的标签是否正确."
+      info_what: "标签和评级将会被转移, 旧投稿将成为新投稿的父项."
       reverse: 撤销
       table:
         from: 来自
         tags: 标签
         to: To
         transfer: 转移
-      title_html: '将%{from}图集中的图片数据转移到%{to}图集中'
+      title_html: "将%{from}图集中的图片数据转移到%{to}图集中"
     update:
       form:
         description: 描述
         is_active:
           _: 活动
-          info: '非活动的图集将不再出现在图帖的添加到图集的下拉菜单中.'
+          info: "非活动的图集将不再出现在图帖的添加到图集的下拉菜单中."
         is_public:
-          _: '公开此图集吗?'
-          info: '公开图集允许任何用户增减图帖.'
+          _: "公开此图集吗?"
+          info: "公开图集允许任何用户增减图帖."
         name: 绘师名
       title: 编辑图集
   post:
@@ -632,7 +632,7 @@ zh_CN:
       info: 含以下标签的贴将被隐藏。用空格来标签分隔不同标签.
     browse:
       by:
-        all_html: '%{text} %{ago} %{by}'
+        all_html: "%{text} %{ago} %{by}"
         by_html: by %{user}
         text: 已投稿
       child:
@@ -662,7 +662,7 @@ zh_CN:
         parent: 父项
       parent_post: 父投稿
       pending_info: 本帖正在等待管理员批准.
-      post_num_html: '投稿 #%{num}'
+      post_num_html: "投稿 #%{num}"
       reason: 原因
       score: 得分
       shown_in_index: 在索引中显示
@@ -700,12 +700,12 @@ zh_CN:
     hover:
       child: 子项
       flagged:
-        by_html: '%{text} by %{data}'
+        by_html: "%{text} by %{data}"
         text: 已被标记
       hidden: 隐藏
       parent: 父项
       pending: 等待中
-      post_number: '帖子ID #'
+      post_number: "帖子ID #"
       rating: 评级
       score: 分数
     index:
@@ -753,7 +753,7 @@ zh_CN:
       title: 正在浏览 %{year}/%{month}
     popular_by_week:
       popular:
-        _: '人气 '
+        _: "人气 "
         month: 人气 (按月)
         week: 人气 (按周)
       title: 正在浏览 %{st_year}/%{st_month}/%{st_day} - %{end_year}/%{end_month}/%{end_day}
@@ -837,9 +837,9 @@ zh_CN:
         view_larger: 看大图
       pool:
         change: 修改页码
-        info_html: '这张图片是%{pool}图集中的第%{sequence}号'
-        next: '后一投稿 »'
-        previous: '« 前一投稿'
+        info_html: "这张图片是%{pool}图集中的第%{sequence}号"
+        next: "后一投稿 »"
+        previous: "« 前一投稿"
         remove:
           _: 移除
           confirm: 你确定要从%{current_pool}图集中移除这张图片吗？
@@ -860,7 +860,7 @@ zh_CN:
         favorited_by: 收藏者：
         id: Id
         posted: 已投稿
-        posted_data_html: '%{time} by %{user}'
+        posted_data_html: "%{time} by %{user}"
         rating: 评分
         score: 得分
         size: 尺寸
@@ -877,7 +877,7 @@ zh_CN:
           info: 此图帖被上传者暂时挂起.
         parent:
           child: 子项
-          child_post_html: '投稿 #%{child}'
+          child_post_html: "投稿 #%{child}"
           children: 子投稿
           parent: 父投稿
         pending:
@@ -916,7 +916,7 @@ zh_CN:
       use_all_services: 开启所有服务
       view_posts: 看贴
     tag_script:
-      confirm: '对以下所有帖子使用标签脚本吗?'
+      confirm: "对以下所有帖子使用标签脚本吗?"
       title: 标签脚本
     tags:
       title: 标签
@@ -947,7 +947,7 @@ zh_CN:
           obnoxious_watermarks: 不良水印
         group: 同人志团体，漫画页，以及类似的CG
         info: 上传时，请小心遵守下面的准则。任何违反准则的行为将会导致封禁。
-        last_word_connector_or: '，或'
+        last_word_connector_or: "，或"
         limit: 你今天只能上传 %{n} 张。
         more_html: 请阅读 %{more_link}
         title: 上传准则
@@ -1164,8 +1164,8 @@ zh_CN:
   tag_type: "类型"
   tag_wild: "使用 * 作为通配符"
   time:
-    x_ago: '%{t} 前'
-    x_ago_html: '%{t} 前'
+    x_ago: "%{t} 前"
+    x_ago_html: "%{t} 前"
   user:
     change_email:
       current_email: 当前Email地址
@@ -1182,7 +1182,7 @@ zh_CN:
       action_info: 在这里你可以您可以对您的个人账号进行设置及对账号的相关信息进行浏览。
       blocked_users: 封禁用户
       change_password: 修改密码
-      greet_user: '你好 %{u}!'
+      greet_user: "你好 %{u}!"
       invites: 邀请
       login: 登陆
       moderator_tools: 管理工具
